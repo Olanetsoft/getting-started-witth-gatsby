@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Starter Blog`,
-    author: `Rachelle Rathbone`,
+    author: `Olanetsoft`,
     description: `A blog that shows you the awesome power of gatsby.`,
     social: {
-      twitter: `coding_love`,
+      twitter: `olanetsoft`,
     },
   },
   plugins: [
@@ -33,6 +33,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`
   ],
 }

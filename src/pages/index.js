@@ -1,13 +1,18 @@
 import React from 'react';
+import {Link} from 'gatsby'
 
 // Components
 import Layout from '../components/layout';
+import SEO from '../components/seo'
 
 class BlogIndex extends React.Component {
 	render() {
 		return (
 			<Layout title="Starter Blog" subtitle="Built with React and Gatsby">
+				<SEO title="All Posts" />
 				<div className="blog-container">
+				<p>Go to <Link to='/about'>About Page</Link></p>
+               
 					<section>
 						<div className="post-summary">
 							<p>May 4th, 2019</p>
@@ -32,7 +37,7 @@ class BlogIndex extends React.Component {
 					</section>
 					<aside>
 						<p>We'll put a profile pic here later</p>
-						<h3>Rachelle Rathbone</h3>
+						<h3>Olanetsoft</h3>
 						<p>
 							Goat gouda who moved my cheese. Red leicester edam port-salut cream cheese pepper jack
 							halloumi jarlsberg mozzarella. Boursin cheese strings manchego bocconcini croque monsieur
